@@ -1,11 +1,10 @@
-import sqlite3 as sql3
 import logging
-
+import sqlite3 as sql3
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 logger = logging.getLogger(__name__)
-logger.info(f"\n[INFO] Starting connection to SQLite3 server for creating text table.")
+logger.info("\n[INFO] Starting connection to SQLite3 server for creating text table.")
 
 # Step 1: Create a SQLite3 database file
 db_file = "text_database.sqlite"  # Name of the database file

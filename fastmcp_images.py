@@ -1,5 +1,6 @@
-from mcp.server.fastmcp import FastMCP, Image
 from PIL import Image as PILImage
+
+from mcp.server.fastmcp import FastMCP, Image
 
 mcp = FastMCP("Test App")
 

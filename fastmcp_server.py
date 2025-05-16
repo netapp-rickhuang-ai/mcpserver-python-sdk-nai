@@ -1,11 +1,9 @@
 # Add lifespan support for startup/shutdown with strong typing
-from contextlib import asynccontextmanager
-from collections.abc import AsyncIterator
-from dataclasses import dataclass
-
 import asyncio
 import logging
-from typing import List, Tuple
+from collections.abc import AsyncIterator
+from contextlib import asynccontextmanager
+from dataclasses import dataclass
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
@@ -13,6 +11,7 @@ logger = logging.getLogger(__name__)
 
 # from fake_database import Database  # Replace with your actual DB type
 import sqlite3
+
 database_db="/home/ailab/files/mcpserver-python-sdk-nai/sqlite3/test_database.sqlite"
 
 from mcp.server.fastmcp import Context, FastMCP

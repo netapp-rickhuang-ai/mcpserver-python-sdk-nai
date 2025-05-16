@@ -1,8 +1,9 @@
-from contextlib import asynccontextmanager
-from collections.abc import AsyncIterator
-
 import sqlite3
+from collections.abc import AsyncIterator
+from contextlib import asynccontextmanager
+
 from mcp.server.fastmcp import FastMCP
+
 mcp = FastMCP("SQLite Explorer")
 
 @mcp.resource("schema://main")
@@ -25,6 +26,7 @@ def query_data(sql: str) -> str:
 
 # from fake_database import Database  # Replace with your actual DB type
 from sqlite3 import Database
+
 from mcp.server import Server
 
 
